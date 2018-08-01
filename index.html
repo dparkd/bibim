@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>bibim___</title>
+    <link rel="icon" href="./favicon.png">
+
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+    <div class="container title">
+      <h1 class="light">bibim___ </h1>
+      <p class="regular" style="font-size: 2em;"><i>noun</i> [bi.bim.___]</p>
+      <p class="regular"><sup>1</sup> to mix one thing with another, meshing of interestes and passions</p>
+      <p class="regular"><sup>2</sup> a prefix to support daniel park's hobbies</p>
+    </div>
+
+    <br><br><br>
+
+
+    <div class="container hobbies">
+
+      <div class="row disabled">
+        <a href="#">
+          <div class="left column">
+            <h1 class="regular">bibim _ _ _ _ _ _ _</h1>
+          </div>
+          <div class="right column">
+            <h1 class="light">coming soon</h1>
+          </div>
+        </a>
+      </div>
+
+      <div class="row" id="hover-bibimbeats">
+        <a href="https://open.spotify.com/artist/0ZZq3qJgGSeqjy6F9ILKAl?si=frX2_fxMSjmgZnJThCfTCA" target="_blank">
+          <div class="left column">
+            <h1 class="regular">bibimbeats</h1>
+          </div>
+          <div class="right column">
+            <h1 class="light">01.18.2018 - present</h1>
+          </div>
+        </a>
+      </div>
+
+      <div class="row" id="hover-poster">
+        <a href="./bibimposters/index.html" >
+          <div class="left column">
+            <h1 class="regular">bibimposters</h1>
+          </div>
+          <div class="right column">
+            <h1 class="light">2016</h1>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+
+    <div class="backgrounds">
+      <div id="poster">
+        <img src="./bibimposters/images/empirestate.jpg" alt="">
+      </div>
+
+      <div id="bibimbeats">
+        <img src="./images/bibimbeats.gif" alt="">
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+      var randposterx = Math.floor(Math.random() * (0 - 70 + 1)) + 70;
+      var randpostery = Math.floor(Math.random() * (0 - 25 + 1)) + 25;
+      document.getElementById('hover-poster').addEventListener('mouseover', function() {
+        document.getElementById('poster').style.left =  randposterx + "%";
+        document.getElementById('poster').style.top =  randpostery + "%";
+        document.getElementById('poster').style.opacity = 1;
+      });
+      document.getElementById('hover-poster').addEventListener('mouseleave', function() {
+        document.getElementById('poster').style.opacity = 0;
+      });
+
+      var bibimx = Math.floor(Math.random() * (0 - 70 + 1)) + 70;
+      var bibimy = Math.floor(Math.random() * (0 - 25 + 1)) + 25;
+      document.getElementById('hover-bibimbeats').addEventListener('mouseover', function() {
+        document.getElementById('bibimbeats').style.left =  bibimx + "%";
+        document.getElementById('bibimbeats').style.top =  bibimy + "%";
+        document.getElementById('bibimbeats').style.opacity = 1;
+      });
+      document.getElementById('hover-bibimbeats').addEventListener('mouseleave', function() {
+        document.getElementById('bibimbeats').style.opacity = 0;
+      });
+    </script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+<!-- <i class="light" style="font-size: 90px;">[bih-bim]</i> -->
