@@ -124,7 +124,7 @@ h1 {
   z-index: -999;
 }
 
-#poster, #bibimbeats {
+#poster, #bibimbeats, #bibimshop {
   opacity: 0;
   position: absolute;
   width: 100%;
@@ -134,4 +134,8 @@ h1 {
 .backgrounds img {
   width: 30%;
   margin: 0 auto;
+}
+
+#bibimshop img {
+  width: 50%;
 }

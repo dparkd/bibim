@@ -25,7 +25,7 @@
       <div class="row disabled">
         <a href="#">
           <div class="left column">
-            <h1 class="regular">bibimmemedrops</h1>
+            <h1 class="regular">bibimjewelry</h1>
           </div>
           <div class="right column">
             <h1 class="light">coming soon</h1>
@@ -33,13 +33,13 @@
         </a>
       </div>
 
-      <div class="row disabled">
-        <a href="#">
+      <div class="row" id="hover-bibimshop">
+        <a href="./bibimshop/index.html">
           <div class="left column">
-            <h1 class="regular">bibimjewelry</h1>
+            <h1 class="regular">bibimshop</h1>
           </div>
           <div class="right column">
-            <h1 class="light">coming soon</h1>
+            <h1 class="light">present</h1>
           </div>
         </a>
       </div>
@@ -77,6 +77,10 @@
       <div id="bibimbeats">
         <img src="./images/bibimbeats.gif" alt="">
       </div>
+
+      <div id="bibimshop">
+        <img src="./images/cover.jpg" alt="">
+      </div>
     </div>
 
 
@@ -102,6 +106,19 @@
       document.getElementById('hover-bibimbeats').addEventListener('mouseleave', function() {
         document.getElementById('bibimbeats').style.opacity = 0;
       });
+
+      var bibimsx = Math.floor(Math.random() * (0 - 70 + 1)) + 70;
+      var bibimsy = Math.floor(Math.random() * (0 - 25 + 1)) + 25;
+      document.getElementById('hover-bibimshop').addEventListener('mouseover', function() {
+        document.getElementById('bibimshop').style.left =  bibimsx + "%";
+        document.getElementById('bibimshop').style.top =  bibimsy + "%";
+        document.getElementById('bibimshop').style.opacity = 1;
+      });
+      document.getElementById('hover-bibimshop').addEventListener('mouseleave', function() {
+        document.getElementById('bibimshop').style.opacity = 0;
+      });
+
+
     </script>
 
   </body>
