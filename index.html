@@ -44,6 +44,17 @@
         </a>
       </div>
 
+      <div class="row" id="hover-bibimbrand">
+        <a href="./bibimbrands/">
+          <div class="left column">
+            <h1 class="regular">bibimbranding</h1>
+          </div>
+          <div class="right column">
+            <h1 class="light">2018</h1>
+          </div>
+        </a>
+      </div>
+
       <div class="row" id="hover-bibimbeats">
         <a href="https://open.spotify.com/artist/0ZZq3qJgGSeqjy6F9ILKAl?si=frX2_fxMSjmgZnJThCfTCA" target="_blank">
           <div class="left column">
@@ -81,6 +92,10 @@
       <div id="bibimshop">
         <img src="./images/cover.jpg" alt="">
       </div>
+
+      <div id="bibimbrand">
+        <img src="./bibimbrands/images/bibimbook.jpg" alt="">
+      </div>
     </div>
 
 
@@ -116,6 +131,17 @@
       });
       document.getElementById('hover-bibimshop').addEventListener('mouseleave', function() {
         document.getElementById('bibimshop').style.opacity = 0;
+      });
+
+      var bibimbrandx = Math.floor(Math.random() * (0 - 70 + 1)) + 70;
+      var bibimbrandy = Math.floor(Math.random() * (0 - 25 + 1)) + 25;
+      document.getElementById('hover-bibimbrand').addEventListener('mouseover', function() {
+        document.getElementById('bibimbrand').style.left =  bibimbrandx + "%";
+        document.getElementById('bibimbrand').style.top =  bibimbrandy + "%";
+        document.getElementById('bibimbrand').style.opacity = 1;
+      });
+      document.getElementById('hover-bibimbrand').addEventListener('mouseleave', function() {
+        document.getElementById('bibimbrand').style.opacity = 0;
       });
 
 

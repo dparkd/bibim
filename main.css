@@ -124,7 +124,7 @@ h1 {
   z-index: -999;
 }
 
-#poster, #bibimbeats, #bibimshop {
+#poster, #bibimbeats, #bibimshop, #bibimbrand {
   opacity: 0;
   position: absolute;
   width: 100%;
