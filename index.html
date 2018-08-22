@@ -22,13 +22,13 @@
 
     <div class="container hobbies">
 
-      <div class="row disabled">
-        <a href="#">
+      <div class="row" id="hover-bibimjewelry">
+        <a href="./bibimjewelry">
           <div class="left column">
             <h1 class="regular">bibimjewelry</h1>
           </div>
           <div class="right column">
-            <h1 class="light">coming soon</h1>
+            <h1 class="light">August 2018</h1>
           </div>
         </a>
       </div>
@@ -39,18 +39,7 @@
             <h1 class="regular">bibimshop</h1>
           </div>
           <div class="right column">
-            <h1 class="light">present</h1>
-          </div>
-        </a>
-      </div>
-
-      <div class="row" id="hover-bibimbeats">
-        <a href="https://open.spotify.com/artist/0ZZq3qJgGSeqjy6F9ILKAl?si=frX2_fxMSjmgZnJThCfTCA" target="_blank">
-          <div class="left column">
-            <h1 class="regular">bibimbeats</h1>
-          </div>
-          <div class="right column">
-            <h1 class="light">present</h1>
+            <h1 class="light">August 2018</h1>
           </div>
         </a>
       </div>
@@ -61,7 +50,18 @@
             <h1 class="regular">bibimbranding</h1>
           </div>
           <div class="right column">
-            <h1 class="light">2018</h1>
+            <h1 class="light">August 2018</h1>
+          </div>
+        </a>
+      </div>
+
+      <div class="row" id="hover-bibimbeats">
+        <a href="https://open.spotify.com/artist/0ZZq3qJgGSeqjy6F9ILKAl?si=frX2_fxMSjmgZnJThCfTCA" target="_blank">
+          <div class="left column">
+            <h1 class="regular">bibimbeats</h1>
+          </div>
+          <div class="right column">
+            <h1 class="light">2017-2018</h1>
           </div>
         </a>
       </div>
@@ -96,6 +96,10 @@
 
       <div id="bibimbrand">
         <img src="./bibimbrands/images/bibimbook.jpg" alt="">
+      </div>
+
+      <div id="bibimjewelry">
+        <img src="./bibimjewelry/images/bg.jpg" alt="">
       </div>
     </div>
 
@@ -143,6 +147,17 @@
       });
       document.getElementById('hover-bibimbrand').addEventListener('mouseleave', function() {
         document.getElementById('bibimbrand').style.opacity = 0;
+      });
+
+      var bibimjewelryx = Math.floor(Math.random() * (0 - 70 + 1)) + 70;
+      var bibimjewelryy = Math.floor(Math.random() * (0 - 25 + 1)) + 25;
+      document.getElementById('hover-bibimjewelry').addEventListener('mouseover', function() {
+        document.getElementById('bibimjewelry').style.left =  bibimjewelryx + "%";
+        document.getElementById('bibimjewelry').style.top =  bibimjewelryy + "%";
+        document.getElementById('bibimjewelry').style.opacity = 1;
+      });
+      document.getElementById('hover-bibimjewelry').addEventListener('mouseleave', function() {
+        document.getElementById('bibimjewelry').style.opacity = 0;
       });
 
 
